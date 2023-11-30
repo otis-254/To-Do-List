@@ -1,4 +1,4 @@
-.container{
+.container {
     height: 100vh;
     padding: 20px;
     align-items: center;
@@ -9,7 +9,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('./img/Galaxy.jpg') ;
+    background-image: url('./img/to\ do.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -25,7 +28,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#app input{
+#app input {
     width: 100%;
     padding: 8px 0;
     margin-bottom: 20px;
@@ -35,21 +38,37 @@ h1 {
 }
 
 button {
-    background-color: transparent;
-    color: black;
+    background-color: green;
+    color: white;
     border: none;
     outline: solid 1px black;
     padding: 5px 10px;
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 
-button:hover{
-    background-color: orangered ;
+button:hover {
+    background-color: orangered;
     color: white;
     outline: none;
     transition: all.2s;
+    font-size: 1rem;
 }
+
+
+#taskList {
+    text-align: center;
+    /* Center the content within the taskList */
+}
+
+#add {
+    margin-top: 10px;
+    /* Add margin to the top of the button for spacing */
+}
+
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -72,6 +91,7 @@ li {
     margin-left: 5px;
     cursor: pointer;
 }
+
 .remove-button {
     background-color: red;
     color: #fff;
@@ -82,19 +102,20 @@ li {
 }
 
 
-.td{
+.td {
     background-color: orangered;
     height: 80px;
     text-align: center;
     border-radius: 5px;
-    padding: 10px ;
- 
+    padding: 10px;
+
 }
 
 
-.td h1{
+.td h1 {
     text-shadow: 2px 2px #333;
 }
-.header{
+
+.header {
     width: 600px;
 }
